@@ -1,0 +1,91 @@
+/* html {
+  background-color: rgb(227, 196, 255);
+} */
+
+body {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(./img/bubba-gum-p.webp);  
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  display: inline-block;
+}
+
+.square {
+  background-color: white;
+  border: 1px solid rgb(255, 101, 209);
+}
+
+.color {
+  background-color: rgba(0, 0, 0, 0.733);
+  border: 1px solid rgb(0, 255, 64);
+}
+
+.gridContainer {
+  margin-top: 25px;
+  margin-right: 40px;
+  display: inline-grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
+  border: 5px solid rgb(255, 183, 183);
+  border-radius: 5px;
+  height: 650px;
+  width: 750px;
+}
+
+#quantity{
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.reset{
+  height: 32px;
+  width: 64px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.reset:hover{
+  color: white;
+  background-color: black;
+  transition: .5s ease;
+}
+
+@media screen and (max-width: 375px) {
+
+  .main-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .gridContainer {
+      margin-left: 39px;
+      display: inline-grid;
+      grid-template-columns: repeat(16, 2fr);
+      grid-template-rows: repeat(16, 2fr);
+      border: 2px solid black;
+      border-radius: 5px;
+      height: 370px;
+      width: 370px;
+    }
+  
+
+
+}

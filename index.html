@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="right">x
+      <div class="gridContainer"></div>
+    </div>
+    <div class="page">
+      <h1>ETCH-A-SKETCH</h1>
+      <label for="quantity">Type A Value For Grid Size:</label>
+      <input type="number" id="quantity" name="quantity" />
+      <button class="reset">RESET</button>
+    </div>
+    </div>
+    <form id="toolbar">
+      <fieldset id="paint-options">
+          <legend>Paint Options</legend>
+          <label for="paint-color" title="Select Color">
+              <input type="color" id="paint-color" value="#000000">
+          </label>
+          <label for="paint-custom" title="Custom Paint Color">
+              <input type="radio" id="paint-custom" name="paint-type" value="custom" checked>
+              Custom Color
+          </label>
+          <label for="paint-random" title="Random Paint Color">
+              <input type="radio" id="paint-random" name="paint-type" value="random">
+              Random Colors
+          </label>
+          <label for="paint-erase" title="Erase Paint Color">
+              <input type="radio" id="paint-erase" name="paint-type" value="erase">
+              Erase Colors
+          </label>
+      </fieldset>
+    </form>  
+      <footer id="footer"><div><p class="description">Coded by <a href="https://www.github.com/laCaelihermosa" target="_blank">lotso' coffee,</a> Hubba Bubba gum.</p></div></footer>
+ 
+</body>
+</html>
